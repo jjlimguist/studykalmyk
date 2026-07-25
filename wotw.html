@@ -26,21 +26,10 @@
                 div.className = "wotw-entry";
 
 			div.innerHTML = `
-				<h2>${entry.word}</h2>
-				<p><em>${entry.transliteration}</em></p>
-				<p>${entry.meaning}</p>
-
-				<p><strong>Example:</strong> ${entry.example}</p>
-				<p><em>${entry["example-transliteration"]}</em></p>
-				<p>${entry["example-meaning"]}</p>
-
 				<video controls class="wotw-video">
 					<source src="${entry.video}" type="video/mp4">
 				</video>
 			`;
-
-                container.appendChild(div);
-            });
 
             // Search functionality
             const searchBar = document.getElementById("searchBar");
