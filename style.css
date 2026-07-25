@@ -105,19 +105,21 @@ nav .nav-links a:hover {
 
 /* WOTW */
 .wotw-container {
-    max-width: 1200px;
-    margin: 40px auto;
+    max-width: 1100px;      /* smaller overall width */
+    margin: 40px auto;      /* centers the entire grid */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 30px;              /* more space between videos */
+    padding: 0 20px;        /* prevents touching browser edges */
 }
 
-.wotw-item {
-    width: 100%;
+.wotw-entry {
+    display: flex;
+    justify-content: center;   /* centers the video inside each grid cell */
 }
 
 .wotw-video {
-    width: 100%;
-    display: block;
+    width: 90%;                /* slightly smaller video */
+    max-width: 300px;          /* prevents oversized videos */
     border-radius: 8px;
 }
