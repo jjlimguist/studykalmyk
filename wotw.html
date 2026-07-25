@@ -14,78 +14,57 @@
     <!-- Container for dynamic entries -->
     <div id="wotwContainer" class="wotw-container"></div>
 
-    <script>
-        async function loadWOTW() {
-            const response = await fetch("wotw.json");
-            const data = await response.json();
+<script>
+async function loadWOTW() {
+    const response = await fetch("wotw.json");
+    const data = await response.json();
 
-            const container = document.getElementById("wotwContainer");
+    const container = document.getElementById("wotwContainer");
 
-		data.forEach(entry => {
-			const div = document.createElement("div");
-			div.className = "wotw-item";
+    // Build the video grid
+    data.forEach(entry => {
+        const div = document.createElement("div");
+        div.className = "wotw-entry";
 
-			div.innerHTML = `
-				<video controls class="wotw-video">
-					<source src="${entry.video}" type="video/mp4">
-				</video>
-			`;
+        div.innerHTML = `
+            <video controls class="wotw-video">
+                <source src="${entry.video}" type="video/mp4">
+            </video>
+        `;
 
-			container.appendChild(div);
-		});
+        container.appendChild(div);
+    });
 
-    // Search functionality
-		async function loadWOTW() {
-			const response = await fetch("wotw.json");
-			const data = await response.json();
+    // Search functionality (must be inside loadWOTW)
+    const searchBar = document.getElementById("searchBar");
 
-			const container = document.getElementById("wotwContainer");
+    searchBar.addEventListener("keyup", () => {
+        const query = searchBar.value.toLowerCase().trim();
+        const entries = document.querySelectorAll(".wotw-entry");
 
-			// Build the video grid
-			data.forEach(entry => {
-				const div = document.createElement("div");
-				div.className = "wotw-entry";
+        entries.forEach((entry, index) => {
+            const metadata = `
+                ${data[index].word}
+                ${data[index].transliteration}
+                ${data[index].meaning}
+                ${data[index].example}
+                ${data[index]["example-transliteration"]}
+                ${data[index]["example-meaning"]}
+                ${data[index].video}
+            `.toLowerCase();
 
-				div.innerHTML = `
-					<video controls class="wotw-video">
-						<source src="${entry.video}" type="video/mp4">
-					</video>
-				`;
-
-				container.appendChild(div);
-			});
-
-	// ⭐ SEARCH MUST BE INSIDE loadWOTW() ⭐
-			const searchBar = document.getElementById("searchBar");
-
-			searchBar.addEventListener("keyup", () => {
-				const query = searchBar.value.toLowerCase().trim();
-				const entries = document.querySelectorAll(".wotw-entry");
-
-				entries.forEach((entry, index) => {
-					const metadata = `
-						${data[index].word}
-						${data[index].transliteration}
-						${data[index].meaning}
-						${data[index].example}
-						${data[index]["example-transliteration"]}
-						${data[index]["example-meaning"]}
-						${data[index].video}
-					`.toLowerCase();
-
-					if (query === "") {
-						entry.style.display = "";
-					} else {
-						entry.style.display = metadata.includes(query) ? "" : "none";
-					}
-				});
-			});
-		}
+            if (query === "") {
+                entry.style.display = "";
+            } else {
+                entry.style.display = metadata.includes(query) ? "" : "none";
+            }
+        });
+    });
+}
 
 loadWOTW();
+</script>
 
-
-    </script>
 
 </body>
 </html>
