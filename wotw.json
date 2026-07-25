@@ -17,4 +17,35 @@
         "example-meaning": "fur coat",
         "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250131-wotw-devl-coat.mp4"
     }
+    {
+        "word": "махла",
+        "transliteration": "mahla",
+		"alt-transliteration": "maxla",
+        "meaning": "hat",
+        "example": "өлгмр махла",
+        "example-transliteration": "ölgmr mahla",
+        "alt-example-transliteration": "ölgmr maxla",
+        "example-meaning": "knitted hat",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250207-wotw-mahla-hat.mp4"
+    }
+    {
+        "word": "беелә",
+        "transliteration": "beelä",
+        "meaning": "mittens",
+        "example": "хурһн беелә",
+        "example-transliteration": "hurghn beelä",
+		"alt-example-transliteration": "xurghn beelä",
+        "example-meaning": "gloves",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250214-wotw-beela%CC%88-mittens.mp4"
+    }
+    {
+        "word": "һосн",
+        "transliteration": "ghosn",
+        "meaning": "boots",
+        "example": "һосна давхрг",
+        "example-transliteration": "ghosna davhrg",
+		"alt-example-transliteration": "ghosna davxrg",
+        "example-meaning": "boot's heel",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250222-wotw-ghosn-boots.mp4"
+    }
 ]
