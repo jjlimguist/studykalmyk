@@ -36,16 +36,31 @@
 
             // Search functionality
             const searchBar = document.getElementById("searchBar");
-            searchBar.addEventListener("keyup", () => {
-                const query = searchBar.value.toLowerCase();
-                const entries = document.querySelectorAll(".wotw-entry");
 
-                entries.forEach(entry => {
-                    const text = entry.textContent.toLowerCase();
-                    entry.style.display = text.includes(query) ? "" : "none";
-                });
-            });
-        }
+				searchBar.addEventListener("keyup", () => {
+					const query = searchBar.value.toLowerCase();
+					const entries = document.querySelectorAll(".wotw-entry");
+
+					entries.forEach((entry, index) => {
+						// Combine ALL metadata into one searchable string
+						const metadata = `
+							${data[index].word}
+							${data[index].transliteration}
+							${data[index].meaning}
+							${data[index].example}
+							${data[index]["example-transliteration"]}
+							${data[index]["example-meaning"]}
+							${data[index].video}
+						`.toLowerCase();
+
+					// If search bar is empty → show everything
+						if (query.trim() === "") {
+							entry.style.display = "";
+						} else {
+							entry.style.display = metadata.includes(query) ? "" : "none";
+						}
+					});
+				});
 
         loadWOTW();
     </script>
