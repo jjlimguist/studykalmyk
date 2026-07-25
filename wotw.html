@@ -50,9 +50,11 @@ async function loadWOTW() {
             const metadata = `
                 ${data[index].word}
                 ${data[index].transliteration}
+				${data[index]["alt-transliteration"] || ""}
                 ${data[index].meaning}
                 ${data[index].example}
                 ${data[index]["example-transliteration"]}
+				${data[index]["alt-example-transliteration"] || ""}
                 ${data[index]["example-meaning"]}
                 ${data[index].video}
             `.toLowerCase();
