@@ -103,71 +103,16 @@ nav .nav-links a:hover {
     border: 1px solid #ccc;
 }
 
-/* Card container */
+/* WOTW */
 .wotw-container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 40px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
-
-/* Individual card */
-.wotw-card {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Hover effect */
-.wotw-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-}
-
-/* Word */
-.wotw-word {
-    font-size: 28px;
-    margin: 0;
-    font-weight: bold;
-}
-
-/* Transliteration */
-.wotw-translit {
-    font-size: 18px;
-    color: #555;
-    margin-top: 4px;
-}
-
-/* Meaning */
-.wotw-meaning {
-    font-size: 20px;
-    margin-top: 10px;
-    font-weight: 500;
-}
-
-/* Example block */
-.wotw-example {
-    margin-top: 15px;
-    background: #f7f7f7;
-    padding: 10px 12px;
-    border-radius: 8px;
-}
-
-.wotw-example-translit {
-    color: #444;
-    font-style: italic;
-}
-
-.wotw-example-meaning {
-    color: #333;
-}
-
-/* Video */
 .wotw-video {
     width: 100%;
-    margin-top: 15px;
-    border-radius: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
 }
