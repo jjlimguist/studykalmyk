@@ -127,7 +127,7 @@ nav .nav-links a:hover {
     margin: 40px auto;      /* centers the entire grid */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;              /* more space between videos */
+    gap: 20px;              /* more space between videos */
     padding: 0 30px;        /* prevents touching browser edges */
 }
 
