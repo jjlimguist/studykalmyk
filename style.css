@@ -137,7 +137,7 @@ nav .nav-links a:hover {
 }
 
 .wotw-video {
-    width: 80%;                /* slightly smaller video */
-    max-width: 200px;          /* prevents oversized videos */
+    width: 90%;                /* slightly smaller video */
+    max-width: 250px;          /* prevents oversized videos */
     border-radius: 8px;
 }
