@@ -21,15 +21,18 @@
 
             const container = document.getElementById("wotwContainer");
 
-            data.forEach(entry => {
-                const div = document.createElement("div");
-                div.className = "wotw-entry";
+		data.forEach(entry => {
+			const div = document.createElement("div");
+			div.className = "wotw-item";
 
 			div.innerHTML = `
 				<video controls class="wotw-video">
 					<source src="${entry.video}" type="video/mp4">
 				</video>
 			`;
+
+			container.appendChild(div);
+		});
 
             // Search functionality
             const searchBar = document.getElementById("searchBar");

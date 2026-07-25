@@ -109,10 +109,15 @@ nav .nav-links a:hover {
     margin: 40px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 20px;
 }
+
+.wotw-item {
+    width: 100%;
+}
+
 .wotw-video {
     width: 100%;
+    display: block;
     border-radius: 8px;
-    margin-top: 10px;
 }
