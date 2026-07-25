@@ -26,11 +26,24 @@
                 div.className = "wotw-entry";
 
                 div.innerHTML = `
-                    <h2>${entry.word} — ${entry.meaning}</h2>
-                    <video controls width="300">
-                        <source src="${entry.video}" type="video/mp4">
-                    </video>
-                `;
+					<div class="wotw-card">
+						<h2 class="wotw-word">${entry.word}</h2>
+						<p class="wotw-translit">${entry.transliteration}</p>
+
+						<p class="wotw-meaning">${entry.meaning}</p>
+
+						<div class="wotw-example">
+							<strong>Example:</strong>
+							<p>${entry.example}</p>
+							<p class="wotw-example-translit">${entry["example-transliteration"]}</p>
+							<p class="wotw-example-meaning">${entry["example-meaning"]}</p>
+						</div>
+
+						<video controls class="wotw-video">
+							<source src="${entry.video}" type="video/mp4">
+						</video>
+					</div>
+				`;
 
                 container.appendChild(div);
             });
