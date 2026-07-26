@@ -141,3 +141,21 @@ nav .nav-links a:hover {
     max-width: 300px;          /* prevents oversized videos */
     border-radius: 8px;
 }
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #eee;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background: #ddd;
+}

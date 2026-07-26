@@ -17,6 +17,7 @@
 
     <!-- Container for dynamic entries -->
     <div id="wotwContainer" class="wotw-container"></div>
+	<div id="pagination" class="pagination"></div>
 
 <script>
 async function loadWOTW() {
@@ -24,48 +25,110 @@ async function loadWOTW() {
     const data = await response.json();
 
     const container = document.getElementById("wotwContainer");
+    const pagination = document.getElementById("pagination");
 
-    // Build the video grid
-    data.forEach(entry => {
-        const div = document.createElement("div");
-        div.className = "wotw-entry";
+    let currentPage = 1;
+    const itemsPerPage = 6;
 
-        div.innerHTML = `
-            <video controls class="wotw-video">
-                <source src="${entry.video}" type="video/mp4">
-            </video>
-        `;
+    function renderPage() {
+        container.innerHTML = ""; // clear old videos
 
-        container.appendChild(div);
-    });
+        const start = (currentPage - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+        const pageItems = data.slice(start, end);
 
-    // Search functionality
+        pageItems.forEach(entry => {
+            const div = document.createElement("div");
+            div.className = "wotw-entry";
+
+            div.innerHTML = `
+                <video controls class="wotw-video">
+                    <source src="${entry.video}" type="video/mp4">
+                </video>
+            `;
+
+            container.appendChild(div);
+        });
+
+        renderPagination();
+    }
+
+    function renderPagination() {
+        pagination.innerHTML = "";
+
+        const totalPages = Math.ceil(data.length / itemsPerPage);
+
+        if (currentPage > 1) {
+            const prevBtn = document.createElement("button");
+            prevBtn.textContent = "Previous";
+            prevBtn.onclick = () => {
+                currentPage--;
+                renderPage();
+            };
+            pagination.appendChild(prevBtn);
+        }
+
+        if (currentPage < totalPages) {
+            const nextBtn = document.createElement("button");
+            nextBtn.textContent = "Next";
+            nextBtn.onclick = () => {
+                currentPage++;
+                renderPage();
+            };
+            pagination.appendChild(nextBtn);
+        }
+    }
+
+    // SEARCH FUNCTIONALITY
     const searchBar = document.getElementById("searchBar");
 
     searchBar.addEventListener("keyup", () => {
         const query = searchBar.value.toLowerCase().trim();
-        const entries = document.querySelectorAll(".wotw-entry");
 
-        entries.forEach((entry, index) => {
+        if (query === "") {
+            // Reset to paginated view
+            currentPage = 1;
+            renderPage();
+            return;
+        }
+
+        // Filter results
+        const filtered = data.filter((entry) => {
             const metadata = `
-                ${data[index].word}
-                ${data[index].transliteration}
-				${data[index]["alt-transliteration"] || ""}
-                ${data[index].meaning}
-                ${data[index].example}
-                ${data[index]["example-transliteration"]}
-				${data[index]["alt-example-transliteration"] || ""}
-                ${data[index]["example-meaning"]}
-                ${data[index].video}
+                ${entry.word}
+                ${entry.transliteration}
+                ${entry["alt-transliteration"] || ""}
+                ${entry.meaning}
+                ${entry.example}
+                ${entry["example-transliteration"] || ""}
+                ${entry["alt-example-transliteration"] || ""}
+                ${entry["example-meaning"] || ""}
+                ${entry.video}
             `.toLowerCase();
 
-            if (query === "") {
-                entry.style.display = "";
-            } else {
-                entry.style.display = metadata.includes(query) ? "" : "none";
-            }
+            return metadata.includes(query);
+        });
+
+        // Show filtered results (no pagination)
+        container.innerHTML = "";
+        pagination.innerHTML = "";
+
+        filtered.forEach(entry => {
+            const div = document.createElement("div");
+            div.className = "wotw-entry";
+
+            div.innerHTML = `
+                <video controls class="wotw-video">
+                    <source src="${entry.video}" type="video/mp4">
+                </video>
+            `;
+
+            container.appendChild(div);
         });
     });
+
+    // Initial render
+    renderPage();
 }
 
 loadWOTW();
