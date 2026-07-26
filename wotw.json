@@ -56,5 +56,33 @@
         "example-transliteration": "zuzan öömsn",
         "example-meaning": "thick socks",
         "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250314-wotw-%C3%B6%C3%B6msn-socks.mp4"
+    },
+    {
+        "word": "Цаган сар",
+        "transliteration": "tsagan sar",
+        "meaning": "white month",
+        "example": "Үвләс менд һарвт? Һарувидн.",
+        "example-transliteration": "Üvläs mend gharvt? Gharuvidn.",
+        "example-meaning": "Did you get out of winter safely? Yes, we got out safely.",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250228-wotw-tsagan-sar.mp4"
+    },
+	{
+        "word": "күзүвч",
+        "transliteration": "küzüvch",
+        "meaning": "scarf",
+        "example": "шеемг күзүвч",
+        "example-transliteration": "sheemg küzüvch",
+        "example-meaning": "woolen scarf",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250328-wotw-k%C3%BCz%C3%BCvch-scarf.mp4"
+    },
+	{
+        "word": "шалвр",
+        "transliteration": "shalvr",
+        "meaning": "pants",
+        "example": "у шалвр",
+        "example-transliteration": "u shalvr",
+        "example-meaning": "loose-fitting pants",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250404-wotw-shalvr-pants.mp4"
     }
+
 ]
