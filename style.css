@@ -145,11 +145,14 @@ nav .nav-links a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 0 30px;
+    max-width: 1000px;     /* match video grid width */
+    margin: 20px auto;     /* center the whole bar */
+    padding: 0 30px;       /* match video grid padding */
 }
-
+.search-input {
+    width: 250px;
+    margin: 0;
+}
 .pagination {
     display: flex;
     gap: 8px;
