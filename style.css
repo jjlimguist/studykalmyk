@@ -141,15 +141,23 @@ nav .nav-links a:hover {
     max-width: 300px;          /* prevents oversized videos */
     border-radius: 8px;
 }
+.wotw-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 30px;
+}
+
 .pagination {
-    text-align: center;
-    margin: 20px 0;
+    display: flex;
+    gap: 8px;
 }
 
 .pagination button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 16px;
+    padding: 6px 12px;
+    font-size: 14px;
     border-radius: 6px;
     border: 1px solid #ccc;
     background: #eee;
@@ -159,3 +167,9 @@ nav .nav-links a:hover {
 .pagination button:hover {
     background: #ddd;
 }
+
+.pagination .active {
+    background: #ccc;
+    font-weight: bold;
+}
+

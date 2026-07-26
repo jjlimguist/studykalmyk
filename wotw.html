@@ -16,8 +16,13 @@
     <input type="text" id="searchBar" placeholder="Search words..." class="search-input">
 
     <!-- Container for dynamic entries -->
-    <div id="wotwContainer" class="wotw-container"></div>
-	<div id="pagination" class="pagination"></div>
+    <div class="wotw-topbar">
+		<input type="text" id="searchBar" placeholder="Search words..." class="search-input">
+		<div id="pagination" class="pagination"></div>
+	</div>
+
+	<div id="wotwContainer" class="wotw-container"></div>
+
 
 <script>
 async function loadWOTW() {
@@ -26,12 +31,13 @@ async function loadWOTW() {
 
     const container = document.getElementById("wotwContainer");
     const pagination = document.getElementById("pagination");
+    const searchBar = document.getElementById("searchBar");
 
     let currentPage = 1;
     const itemsPerPage = 6;
 
     function renderPage() {
-        container.innerHTML = ""; // clear old videos
+        container.innerHTML = "";
 
         const start = (currentPage - 1) * itemsPerPage;
         const end = start + itemsPerPage;
@@ -58,42 +64,75 @@ async function loadWOTW() {
 
         const totalPages = Math.ceil(data.length / itemsPerPage);
 
-        if (currentPage > 1) {
-            const prevBtn = document.createElement("button");
-            prevBtn.textContent = "Previous";
-            prevBtn.onclick = () => {
+        // FIRST
+        const firstBtn = document.createElement("button");
+        firstBtn.textContent = "First";
+        firstBtn.onclick = () => {
+            currentPage = 1;
+            renderPage();
+        };
+        pagination.appendChild(firstBtn);
+
+        // PREVIOUS
+        const prevBtn = document.createElement("button");
+        prevBtn.textContent = "Prev";
+        prevBtn.onclick = () => {
+            if (currentPage > 1) {
                 currentPage--;
                 renderPage();
-            };
-            pagination.appendChild(prevBtn);
-        }
+            }
+        };
+        pagination.appendChild(prevBtn);
 
-        if (currentPage < totalPages) {
-            const nextBtn = document.createElement("button");
-            nextBtn.textContent = "Next";
-            nextBtn.onclick = () => {
-                currentPage++;
+        // NUMBERED BUTTONS
+        for (let i = 1; i <= totalPages; i++) {
+            const pageBtn = document.createElement("button");
+            pageBtn.textContent = i;
+
+            if (i === currentPage) {
+                pageBtn.classList.add("active");
+            }
+
+            pageBtn.onclick = () => {
+                currentPage = i;
                 renderPage();
             };
-            pagination.appendChild(nextBtn);
+
+            pagination.appendChild(pageBtn);
         }
+
+        // NEXT
+        const nextBtn = document.createElement("button");
+        nextBtn.textContent = "Next";
+        nextBtn.onclick = () => {
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderPage();
+            }
+        };
+        pagination.appendChild(nextBtn);
+
+        // LAST
+        const lastBtn = document.createElement("button");
+        lastBtn.textContent = "Last";
+        lastBtn.onclick = () => {
+            currentPage = totalPages;
+            renderPage();
+        };
+        pagination.appendChild(lastBtn);
     }
 
     // SEARCH FUNCTIONALITY
-    const searchBar = document.getElementById("searchBar");
-
     searchBar.addEventListener("keyup", () => {
         const query = searchBar.value.toLowerCase().trim();
 
         if (query === "") {
-            // Reset to paginated view
             currentPage = 1;
             renderPage();
             return;
         }
 
-        // Filter results
-        const filtered = data.filter((entry) => {
+        const filtered = data.filter(entry => {
             const metadata = `
                 ${entry.word}
                 ${entry.transliteration}
@@ -109,7 +148,6 @@ async function loadWOTW() {
             return metadata.includes(query);
         });
 
-        // Show filtered results (no pagination)
         container.innerHTML = "";
         pagination.innerHTML = "";
 
@@ -127,7 +165,6 @@ async function loadWOTW() {
         });
     });
 
-    // Initial render
     renderPage();
 }
 
