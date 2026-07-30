@@ -86,8 +86,8 @@ nav.nav-static {
 }
 
 nav.nav-static .nav-links {
-    list-style: none;   /* removes bullets */
-    display: flex;
+    list-style: none;      /* removes bullets */
+    display: flex;         /* horizontal layout */
     gap: 25px;
     margin: 0;
     padding: 0;
