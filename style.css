@@ -27,7 +27,6 @@ body {
     filter: brightness(70%);
 }
 
-/* Floating Navigation Bar over image */
 /* Floating nav ONLY on hero pages */
 .has-hero nav {
     position: absolute;
@@ -72,17 +71,6 @@ nav .nav-links a {
 
 nav .nav-links a:hover {
     text-decoration: underline;
-}
-
-nav .nav-static {
-    position: static;
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 0 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 /* Centered Text Over Image */
