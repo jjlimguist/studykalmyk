@@ -73,6 +73,27 @@ nav .nav-links a:hover {
     text-decoration: underline;
 }
 
+/* Static nav bar for non-hero pages */
+nav.nav-static {
+    position: static;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto 40px auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between; /* logo left, links right */
+    align-items: center;
+}
+
+nav.nav-static .nav-links {
+    list-style: none;   /* removes bullets */
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+
 /* Centered Text Over Image */
 .hero-text {
     position: absolute;
