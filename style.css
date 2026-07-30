@@ -5,13 +5,7 @@ body {
     background-color: #f5f5f5;
 }
 
-/* Normal nav bar on pages without a hero image */
-body:not(.has-hero) nav {
-    position: static;
-    margin: 20px auto 40px auto; /* adds space below nav */
-    max-width: 1000px;
-    padding: 0 30px;
-}
+
 
 /* Page wrapper to center image + nav together */
 .hero {
@@ -34,19 +28,24 @@ body:not(.has-hero) nav {
 }
 
 /* Floating Navigation Bar over image */
-nav {
-    position: absolute;            /* floats over hero */
-    top: 20px;                     /* distance from top of image */
+/* Floating nav ONLY on hero pages */
+.has-hero nav {
+    position: absolute;
+    top: 20px;
     left: 50%;
-    transform: translateX(-50%);   /* center nav over image */
+    transform: translateX(-50%);
     width: 100%;
-    max-width: 900px;              /* same width as image */
-    display: flex;
-    justify-content: space-between;/* logo left, links right */
-    align-items: center;
+    max-width: 900px;
     padding: 0 20px;
-    background: none;              /* no background */
-    z-index: 10;                   /* keep above image */
+    z-index: 10;
+}
+
+/* Normal nav bar on pages without a hero image */
+body:not(.has-hero) nav {
+    position: static;
+    margin: 20px auto 40px auto; /* adds space below nav */
+    max-width: 1000px;
+    padding: 0 30px;
 }
 
 /* Logo (left) */
