@@ -147,17 +147,30 @@ nav .nav-links a:hover {
     margin: 40px auto;
     padding: 0 30px;
     display: flex;
-    gap: 30px;
-    align-items: flex-start;
+    gap: 40px;
+    align-items: flex-start; /* aligns top of image + text */
 }
 
+/* Image column: ~40% width */
 .tale-cover {
-    width: 300px;
+    width: 40%;              /* larger image */
+    max-width: 380px;        /* prevents overly huge scaling */
     border-radius: 10px;
 }
 
+/* Text column: ~60% width */
 .tale-info {
-    flex: 1;
+    flex: 1;                 /* takes remaining space */
+    max-width: 60%;
+}
+
+.tale-header {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 30px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
 }
 
 .tale-subtitle {
