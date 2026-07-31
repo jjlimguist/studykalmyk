@@ -102,6 +102,47 @@ nav .nav-links a:hover {
     border: 1px solid #ccc;
 }
 
+
+/* Tales */
+.tales-grid {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tale-card {
+    display: block;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tale-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.tale-card-inner h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.tale-card-inner p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+
+
 /* WOTW */
 .intro-text {
     max-width: 800px;
