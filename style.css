@@ -163,6 +163,7 @@ nav .nav-links a:hover {
 .tale-info {
     flex: 1;                 /* takes remaining space */
     max-width: 55%;
+	text-align: center;
 }
 
 .tale-header {
@@ -183,6 +184,13 @@ nav .nav-links a:hover {
 .tale-description {
     font-size: 18px;
     line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Audio player */
+.tale-info audio {
+    width: 80%;
+    max-width: 400px;
     margin-top: 20px;
 }
 
