@@ -141,6 +141,36 @@ nav .nav-links a:hover {
     color: #666;
 }
 
+/* Tale page layout */
+.tale-header {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 30px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.tale-cover {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.tale-info {
+    flex: 1;
+}
+
+.tale-subtitle {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #444;
+}
+
+.tale-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
 
 
 /* WOTW */
