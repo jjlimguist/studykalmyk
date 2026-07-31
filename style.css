@@ -153,8 +153,8 @@ nav .nav-links a:hover {
 
 /* Image column: ~40% width */
 .tale-cover {
-    width: 40%;              /* larger image */
-    max-width: 380px;        /* prevents overly huge scaling */
+    width: 45%;              /* larger image */
+    max-width: 420px;        /* prevents overly huge scaling */
     border-radius: 10px;
 	margin-top: 20px;		/* to align image with text block */
 }
@@ -162,7 +162,7 @@ nav .nav-links a:hover {
 /* Text column: ~60% width */
 .tale-info {
     flex: 1;                 /* takes remaining space */
-    max-width: 60%;
+    max-width: 55%;
 }
 
 .tale-header {
