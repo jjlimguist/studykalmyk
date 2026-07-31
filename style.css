@@ -27,24 +27,25 @@ body {
     filter: brightness(70%);
 }
 
-/* Floating nav ONLY on hero pages */
-.has-hero nav {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+
+/* Static nav bar */
+nav.nav-static {
+    position: static;
     width: 100%;
-    max-width: 900px;
-    padding: 0 20px;
-    z-index: 10;
+    max-width: 1000px;
+    margin: 20px auto 40px auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between; /* logo left, links right */
+    align-items: center;
 }
 
-/* Normal nav bar on pages without a hero image */
-body:not(.has-hero) nav {
-    position: static;
-    margin: 20px auto 40px auto; /* adds space below nav */
-    max-width: 1000px;
-    padding: 0 30px;
+nav.nav-static .nav-links {
+    list-style: none;      /* removes bullets */
+    display: flex;         /* horizontal layout */
+    gap: 25px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Logo (left) */
@@ -72,27 +73,6 @@ nav .nav-links a {
 nav .nav-links a:hover {
     text-decoration: underline;
 }
-
-/* Static nav bar for non-hero pages */
-nav.nav-static {
-    position: static;
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto 40px auto;
-    padding: 0 30px;
-    display: flex;
-    justify-content: space-between; /* logo left, links right */
-    align-items: center;
-}
-
-nav.nav-static .nav-links {
-    list-style: none;      /* removes bullets */
-    display: flex;         /* horizontal layout */
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-}
-
 
 /* Centered Text Over Image */
 .hero-text {
