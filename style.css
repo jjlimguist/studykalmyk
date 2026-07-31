@@ -156,6 +156,7 @@ nav .nav-links a:hover {
     width: 40%;              /* larger image */
     max-width: 380px;        /* prevents overly huge scaling */
     border-radius: 10px;
+	margin-top: 20px;		/* to align image with text block */
 }
 
 /* Text column: ~60% width */
