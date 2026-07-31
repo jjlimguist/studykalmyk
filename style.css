@@ -55,15 +55,7 @@ nav .logo {
     font-weight: bold;
 }
 
-/* Nav links (right) */
-nav .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-}
-
+/* Nav link styling */
 nav .nav-links a {
     color: black;
     text-decoration: none;
