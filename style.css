@@ -114,16 +114,59 @@ nav .nav-links a:hover {
 }
 
 /* Styling for Songs */
-/* Audio block */
-.song-audio-block {
-    text-align: center;
-    margin: 30px auto;
+/* SONG HEADER TWO-COLUMN LAYOUT */
+.song-header {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 30px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
 }
 
-.song-audio-block audio {
-    width: 80%;
-    max-width: 450px;
+/* LEFT COLUMN */
+.song-info {
+    flex: 1;
 }
+
+.song-title {
+    font-size: 36px;
+    margin: 0;
+}
+
+.song-subtitle {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #444;
+}
+
+.song-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.song-audio {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+/* RIGHT COLUMN */
+.song-video {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.video-embed {
+    width: 100%;
+    max-width: 450px;
+    height: 260px;
+    border-radius: 10px;
+    border: none;
+}
+
 
 /* PDF section title */
 .pdf-section-title {
@@ -169,24 +212,6 @@ nav .nav-links a:hover {
     color: #444;
     line-height: 1.5;
 }
-
-/* Video block */
-.video-block {
-    max-width: 900px;
-    margin: 30px auto 60px auto;
-    padding: 0 30px;
-    text-align: center;
-}
-
-/* Responsive YouTube embed */
-.video-embed {
-    width: 100%;
-    max-width: 800px;
-    height: 450px;
-    border-radius: 10px;
-    border: none;
-}
-
 
 /* Styling for Tales */
 .tale-card {
