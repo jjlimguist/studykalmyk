@@ -162,7 +162,7 @@ nav .nav-links a:hover {
 .video-embed {
     width: 100%;
     max-width: 550px;
-    height: 360px;
+    height: 300px;
     border-radius: 10px;
     border: none;
 }
