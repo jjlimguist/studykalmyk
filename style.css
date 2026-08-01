@@ -161,6 +161,32 @@ nav .nav-links a:hover {
     color: #555;
 }
 
+/* Video section title */
+.video-section-title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 24px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Video block */
+.video-block {
+    max-width: 900px;
+    margin: 30px auto 60px auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
+/* Responsive YouTube embed */
+.video-embed {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 10px;
+    border: none;
+}
+
 
 /* Styling for Tales */
 .tale-card {
