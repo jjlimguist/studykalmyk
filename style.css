@@ -103,8 +103,8 @@ nav .nav-links a:hover {
 }
 
 
-/* Tales */
-.tales-grid {
+/* Grid layout for Tales and Songs */
+.grid {
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 30px;
