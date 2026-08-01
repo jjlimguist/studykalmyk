@@ -372,3 +372,22 @@ nav .nav-links a:hover {
     font-weight: bold;
 }
 
+/* About section */
+.about-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 30px;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.about-section h2 {
+    margin-top: 40px;
+    font-size: 26px;
+}
+
+.contributors-list {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
