@@ -156,7 +156,6 @@ nav .nav-links a:hover {
     width: 45%;              /* larger image */
     max-width: 420px;        /* prevents overly huge scaling */
     border-radius: 10px;
-	margin-top: 20px;		/* to align image with text block */
 }
 
 /* Text column: ~60% width */
@@ -179,6 +178,10 @@ nav .nav-links a:hover {
     font-size: 22px;
     margin-top: 10px;
     color: #444;
+}
+
+.tale-info h1.page-title {
+    margin-top: 0;
 }
 
 .tale-description {
