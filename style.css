@@ -5,8 +5,6 @@ body {
     background-color: #f5f5f5;
 }
 
-
-
 /* Page wrapper to center image + nav together */
 .hero {
     margin-top: 60px;              /* space from top of page */
@@ -101,6 +99,27 @@ nav .nav-links a:hover {
     border-radius: 8px;
     border: 1px solid #ccc;
 }
+
+/* Styling for general text */
+.general-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.general-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.general-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
 
 
 /* Grid layout for Tales and Songs */
