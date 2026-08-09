@@ -83,5 +83,33 @@
         "example-transliteration": "u shalvr",
         "example-meaning": "loose-fitting pants",
         "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250404-wotw-shalvr-pants.mp4"
+    },
+	{
+        "word": "күлт",
+        "transliteration": "kült",
+        "meaning": "coat jacket",
+        "example": "хаваста күлт",
+        "example-transliteration": "havasta kült",
+		"alt-example-transliteration": "xavasta kült",
+        "example-meaning": "quilted coat jacket",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250418-wotw-k%C3%BClt-coat-jacket.mp4"
+    },
+	{
+        "word": "майг",
+        "transliteration": "mayg",
+        "meaning": "skirt",
+        "example": "килң майг",
+        "example-transliteration": "kilng mayg",
+        "example-meaning": "velvet skirt",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250425-wotw-mayg-skirt.mp4"
+    },
+	{
+        "word": "киилг",
+        "transliteration": "kiilg",
+        "meaning": "shirt blouse",
+        "example": "торһн киилг",
+        "example-transliteration": "torghn kiilg",
+        "example-meaning": "silk shirt blouse",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250502-wotw-kiilg-shirt-blouse.mp4"
     }
 ]
