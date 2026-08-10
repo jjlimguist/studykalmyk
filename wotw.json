@@ -111,5 +111,73 @@
         "example-transliteration": "torghn kiilg",
         "example-meaning": "silk shirt blouse",
         "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250502-wotw-kiilg-shirt-blouse.mp4"
+    },
+	{
+        "word": "тиирцг",
+        "transliteration": "tiirtsg",
+        "meaning": "hat",
+        "example": "күүкд күүнә тиирцг",
+        "example-transliteration": "küükd küünä tiirtsg",
+        "example-meaning": "women's hat",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250509-wotw-tiirtsg-hat.mp4"
+    },
+	{
+        "word": "альчур",
+        "transliteration": "al'chur",
+        "meaning": "handkerchief",
+        "example": "цаһан альчур",
+        "example-transliteration": "tsaghan al'chur",
+        "example-meaning": "white handkerchief",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250718-wotw-al'chur-handkerchief.mp4"
+    },
+	{
+        "word": "толһа",
+        "transliteration": "tolgha",
+        "meaning": "head",
+        "example": "толһаһан гекх",
+        "example-transliteration": "tolghaghan gekh",
+		"alt-example-transliteration": "tolghaghan gekx",
+        "example-meaning": "to nod to agree",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250829-wotw-tolgha-head.mp4"
+    },
+	{
+        "word": "чирә",
+        "transliteration": "chirä",
+        "meaning": "face",
+        "example": "чирәһән бултулх",
+        "example-transliteration": "chiräghän bultulh",
+		"alt-example-transliteration": "chiräghän bultulx",
+        "example-meaning": "to hide one's face",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250907-wotw-chir%C3%A4-face.mp4"
+    },
+	{
+        "word": "үсн",
+        "transliteration": "üsn",
+        "meaning": "hair",
+        "example": "атхр үсн",
+        "example-transliteration": "athr üsn",
+		"alt-example-transliteration": "atxr üsn",
+        "example-meaning": "curly hair",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250914-wotw-%C3%BCsn-hair.mp4"
+    },
+	{
+        "word": "эм",
+        "transliteration": "em",
+        "meaning": "shoulder",
+        "example": "эм ээмән түшлдх",
+        "example-transliteration": "em eemän tüshldh",
+		"alt-example-transliteration": "em eemän tüshldx",
+        "example-meaning": "to support one another to lean on one another's shoulder",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250923-wotw-em-shoulder.mp4"
+    },
+	{
+        "word": "эм",
+        "transliteration": "em",
+        "meaning": "shoulder",
+        "example": "эм ээмән түшлдх",
+        "example-transliteration": "em eemän tüshldh",
+		"alt-example-transliteration": "em eemän tüshldx",
+        "example-meaning": "to support one another to lean on one another's shoulder",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250923-wotw-em-shoulder.mp4"
     }
 ]
