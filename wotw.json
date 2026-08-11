@@ -179,5 +179,55 @@
 		"alt-example-transliteration": "em eemän tüshldx",
         "example-meaning": "to support one another to lean on one another's shoulder",
         "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20250923-wotw-em-shoulder.mp4"
+    },
+	{
+        "word": "күзүн",
+        "transliteration": "küzün",
+        "meaning": "neck",
+        "example": "бөдүн күзүтә күн",
+        "example-transliteration": "bödün küzütä kün",
+        "example-meaning": "stubborn person thick-necked person",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20251004-wotw-k%C3%BCz%C3%BCn-neck.mp4"
+    },
+	{
+        "word": "нурһн",
+        "transliteration": "nurghn",
+        "meaning": "back",
+        "example": "нурһан үүрх",
+        "example-transliteration": "nurghan üürh",
+		"alt-example-transliteration": "nurghan üürx",
+        "example-meaning": "holding clasped hands behind one's back to carry one's back",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20251017-wotw-nurghn-back.mp4"
+    },
+	{
+        "word": "һар",
+        "transliteration": "ghar",
+        "meaning": "arm hand",
+        "example": "һартан өөтә күн",
+        "example-transliteration": "ghartan öötä kün",
+        "example-meaning": "handyman person with a skilled hand",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20251026-wotw-ghar-hand.mp4"
+    },
+	{
+        "word": "хурһн",
+        "transliteration": "hurghn",
+		"alt-transliteration": "xurghn",
+        "meaning": "finger",
+        "example": "хумха хурһн",
+        "example-transliteration": "humha hurghn",
+		"alt-example-transliteration": "xumxa xurghn",
+        "example-meaning": "index finger",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20251102-wotw-hurghn-finger.mp4"
+    },
+	{
+        "word": "хумсн",
+        "transliteration": "humsn",
+		"alt-transliteration": "xumsn",
+        "meaning": "finger",
+        "example": "хумс ширдх",
+        "example-transliteration": "hums shirdh",
+		"alt-example-transliteration": "xums shirdx",
+        "example-meaning": "to paint nails",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20251116-wotw-humsn-nail.mp4"
     }
 ]
