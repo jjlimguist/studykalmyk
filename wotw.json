@@ -229,5 +229,34 @@
 		"alt-example-transliteration": "xums shirdx",
         "example-meaning": "to paint nails",
         "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20251116-wotw-humsn-nail.mp4"
+    },
+	{
+        "word": "маңна",
+        "transliteration": "mangna",
+        "meaning": "forehead",
+        "example": "маңна тиних",
+        "example-transliteration": "mangna tinih",
+		"alt-example-transliteration": "mangna tinix",
+        "example-meaning": "to calm down to smooth forehead",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20251123-wotw-mangna-forehead.mp4"
+    },
+	{
+        "word": "өвдөг",
+        "transliteration": "övdög",
+        "meaning": "knee",
+        "example": "өвдгән дарад суух",
+        "example-transliteration": "övdgän darad suuh",
+		"alt-example-transliteration": "övdgän darad suux",
+        "example-meaning": "to sit with a knee pressed to the ground",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20251130-wotw-%C3%B6vdg-knee.mp4"
+    },
+	{
+        "word": "чикн",
+        "transliteration": "chikn",
+        "meaning": "ear",
+        "example": "чикнә ашк",
+        "example-transliteration": "chiknä ashk",
+        "example-meaning": "earlobe",
+        "video": "https://filedn.com/lLrTC9f1HFdSosvOHd13ozL/WOTW/20251209-wotw-chikn-ear.mp4"
     }
 ]
